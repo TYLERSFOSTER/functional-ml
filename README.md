@@ -67,7 +67,17 @@ When we think about it this way, it becomes more clear why we call this a *defro
 
 ### Morphisms from monads to rings
 
-$$\text{Cons}\longrightarrow A$$
+$$\text{List}\longrightarrow A$$
+
+[...]
+
+$$\text{taking}\ \ \ [\ ]\ \mapsto\ 0\ \ \ \text{and taking}\ \ \ \big(a_0,\ [a_1,\ \dots,\ a_n]\big)\ \ \mapsto\ \ a_0+a_1+\cdots+a_n$$
+
+[...]
+
+<div align="center">
+  <img src="./images/list_to_ring.png" alt="ring_deformation" width="25%">
+</div>
 
 ### Deformations of monad algebras
 
