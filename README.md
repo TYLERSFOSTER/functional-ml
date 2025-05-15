@@ -3,11 +3,17 @@
 ## Deformations of monads and monad algebras
 
 ### Deformations of rings and their modules
+
 $$A\ \ :=\ \ \mathbb{R}[x, y, z]\ \big/\ (x^2+y^2-z)$$
+
 [...]
+
 $$\mathbb{R}[t]\ \longrightarrow\ A\ \ \ \ \ \ \text{taking}\ \ \ \ \ \ t\ \mapsto\ z.$$
+
 If we evaluate $t$ at a particular choice of value $t_0\in\mathbb{R}$, then as a consequence we project the whole algebra $A$ down to a smaller algerba
+
 $$A_0\ \ =\ \ \mathbb{R}[x, y]\ \big/\ (x^2+y^2-t_0).$$
+
 We think of $A$ as a *family of algebras* varying along the parameter $t:=z$. We often interpret this family as *deformation* of the particular algebra $A_0$ that occurs when $t=t_0$.
 
 Note that what we've really described here is the exitence of a commutative diagram:
