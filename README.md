@@ -67,6 +67,8 @@ When we think about it this way, it becomes more clear why we call this a *defro
 
 ### Morphisms from monads to rings
 
+$$\text{Cons}\longrightarrow A$$
+
 ### Deformations of monad algebras
 
 ### Deformations of monads
