@@ -4,7 +4,7 @@
 
 ### Deformations of rings and their modules
 
-$$A\ \ :=\ \ \mathbb{R}[x, y, z]\ \big/\ (x^2+y^2-z)$$
+$$A\ \ :=\ \ \mathbb{R}[x, y, z]\ \big/\ (x^2+y^2-z^2)$$
 
 [...]
 
@@ -31,13 +31,13 @@ We get a second interpretation of this situation with the rings $A$ and $A_0$ if
 
 To see this, note that this $\mathbb{R}$-algebra
 
-$$A=\mathbb{R}[x,y,z]\big/(x^2+y^2-z)$$
+$$A=\mathbb{R}[x,y,z]\big/(x^2+y^2-z^2)$$
 
 that we introduced is an algebra of functions defined on the cone in $\mathbb{R}^3$ given by the equation
 
-$$x^2+y^2-z\ =\ 0.$$
+$$x^2+y^2-z^2\ =\ 0.$$
 
-We denote this cone "$V(x^2+y^2-z)$." It is the *algebraic variety* cut out by the equaiton determined by vanishing of the polynomial $x^2+y^2-z$. Likewise, our $\mathbb{R}$-algebra $\mathbb{R}[t]$ is the algebra of polynomial functions on the real line $\mathbb{R}$. The standard notation for this latter variety is $\mathbb{A}^{1}_{\mathbb{R}}$.
+We denote this cone "$V(x^2+y^2-z^2)$." It is the *algebraic variety* cut out by the equaiton determined by vanishing of the polynomial $x^2+y^2-z^2$. Likewise, our $\mathbb{R}$-algebra $\mathbb{R}[t]$ is the algebra of polynomial functions on the real line $\mathbb{R}$. The standard notation for this latter variety is $\mathbb{A}^{1}_{\mathbb{R}}$.
 
 The morphism of $\mathbb{R}$-algebras
 
@@ -45,7 +45,7 @@ $$\mathbb{R}[t]\longrightarrow A$$
 
 that we used is just the *pullback map* $\varphi^\ast f=f\circ\varphi$ for functions on $\mathbb{A}^{1}_{\mathbb{R}}$, pulled back along the map 
 
-$$\varphi:\ \ V(x^2+y^2-z)\ \longrightarrow\ \mathbb{A}^1_{\mathbb{R}}$$
+$$\varphi:\ \ V(x^2+y^2-z^2)\ \longrightarrow\ \mathbb{A}^1_{\mathbb{R}}$$
 
 taking $(x,y,z)\mapsto z$.
 
