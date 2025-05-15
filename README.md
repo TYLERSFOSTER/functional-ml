@@ -61,7 +61,7 @@ When we think about it this way, it becomes more clear why we call this a *defro
 
 [Draw the picture of fibers of the deforming cone...]
 
-### Singluarities in deformations
+### Singularities in deformations
 
 ### Rings as monads
 
@@ -69,11 +69,15 @@ When we think about it this way, it becomes more clear why we call this a *defro
 
 $$\text{List}\longrightarrow A$$
 
-[...]
+determined by a system of natural maps
 
-$$\text{taking}\ \ \ [\ ]\ \mapsto\ 0\ \ \ \text{and taking}\ \ \ \big(a_0,\ [a_1,\ \dots,\ a_n]\big)\ \ \mapsto\ \ a_0+a_1+\cdots+a_n$$
+$$\text{List}(S)\ \longrightarrow\ \text{Free}_{A\text{-\textbf{Mod}}}(S)$$
 
-[...]
+that take
+
+$$[\ ]\ \longmapsto\ 0\ \ \ \ \ \ \ \ \ \text{and}\ \ \ \ \ \ \ \ \ [s_1,\ s_2,\ \dots,\ s_n]\ \ \ \longmapsto\ \ \ s_1+s_2+\cdots + s_n$$
+
+IN fact this map is canonical in some sense. [...]
 
 <div align="center">
   <img src="./images/list_to_ring.png" alt="ring_deformation" width="25%">
