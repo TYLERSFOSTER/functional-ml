@@ -19,7 +19,7 @@ We think of $A$ as a *family of algebras* varying along the parameter $t:=z$. We
 Note that what we've really described here is the exitence of a commutative diagram:
 
 <div align="center">
-  <img src="./images/alg_def.jpg" alt="ring_deformation" width="20%">
+  <img src="./images/alg_def.jpg" alt="ring_deformation" width="18%">
 </div>
 
 Note that this is a very different thing than deforming a module of a given ring. Suppose that we have some ring that's not necessarily an $\mathbb{R}$-algebra. Let's call this ring $R$. We can also consider *deformations of* $R$-*modules* in which the ring $R$ is fixed and does not deform.
@@ -45,7 +45,7 @@ $$\mathbb{R}[t]\longrightarrow A$$
 
 that we used is just the *pullback map* $\varphi^\ast f=f\circ\varphi$ for functions on $\mathbb{A}^{1}_{\mathbb{R}}$, pulled back along the map 
 
-$$\varphi\ \!:\ \ V(x^2+y^2-z)\ \longrightarrow\ \mathbb{A}^1_{\mathbb{R}}$$
+$$\varphi:\ \ V(x^2+y^2-z)\ \longrightarrow\ \mathbb{A}^1_{\mathbb{R}}$$
 
 taking $(x,y,z)\mapsto z$.
 
