@@ -33,11 +33,15 @@ To see this, note that this $\mathbb{R}$-algebra
 
 $$A=\mathbb{R}[x,y,z]\big/(x^2+y^2-z^2)$$
 
-that we introduced is an algebra of functions defined on the cone in $\mathbb{R}^3$ given by the equation
+that we introduced is an algebra of functions defined on the double-napped cone in $\mathbb{R}^3$ given by the equation
 
 $$x^2+y^2-z^2\ =\ 0.$$
 
-We denote this cone "$V(x^2+y^2-z^2)$." It is the *algebraic variety* cut out by the equaiton determined by vanishing of the polynomial $x^2+y^2-z^2$. Likewise, our $\mathbb{R}$-algebra $\mathbb{R}[t]$ is the algebra of polynomial functions on the real line $\mathbb{R}$. The standard notation for this latter variety is $\mathbb{A}^{1}_{\mathbb{R}}$.
+We denote this cone
+
+$$V(x^2+y^2-z^2),$$
+
+or just $V$ for short. It is the *algebraic variety* cut out by the equaiton determined by vanishing of the polynomial $x^2+y^2-z^2$. Likewise, our $\mathbb{R}$-algebra $\mathbb{R}[t]$ is the algebra of polynomial functions on the real line $\mathbb{R}$. The standard notation for this latter variety is $\mathbb{A}^{1}_{\mathbb{R}}$.
 
 The morphism of $\mathbb{R}$-algebras
 
@@ -47,12 +51,28 @@ that we used is just the *pullback map* $\varphi^\ast f=f\circ\varphi$ for funct
 
 $$\varphi:\ \ V(x^2+y^2-z^2)\ \longrightarrow\ \mathbb{A}^1_{\mathbb{R}}$$
 
-taking $(x,y,z)\mapsto z$.
+taking $(x,\ y,\ z)\mapsto z$.
 
-[Draw the reverse diagram with all arrows reversed...]
+<div align="center">
+  <img src="./images/alg_def_scheme.jpg" alt="ring_deformation" width="18%">
+</div>
+
+When we think about it this way, it becomes more clear why we call this a *defromation*. We are *deforming* a varietiy within a parametrized family of varieties:
 
 [Draw the picture of fibers of the deforming cone...]
 
 ### Singluarities in deformations
 
 ### Rings as monads
+
+### Morphisms from monads to rings
+
+### Deformations of monad algebras
+
+### Deformations of monads
+
+## Implementation Roadmap
+
+### Prototype project: [...]
+
+### Prototype project: [...]
