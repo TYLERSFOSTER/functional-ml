@@ -77,7 +77,7 @@ that take
 
 $$[\ ]\ \longmapsto\ 0\ \ \ \ \ \ \ \ \ \text{and}\ \ \ \ \ \ \ \ \ [s_1,\ s_2,\ \dots,\ s_n]\ \ \ \longmapsto\ \ \ s_1+s_2+\cdots + s_n$$
 
-IN fact this map is canonical in some sense. [...]
+In fact this map is canonical in some sense. [...]
 
 <div align="center">
   <img src="./images/R-alg.jpg" alt="ring_deformation" width="25%">
@@ -89,6 +89,10 @@ IN fact this map is canonical in some sense. [...]
   <img src="./images/Z-alg.jpg" alt="ring_deformation" width="25%">
 </div>
 
+[...FIX: The "kernel" of this morphism, meaning the equalizer of $\text{List}\xrightarrow{[x, y]\ \mapsto\ x+y} A$ and the zero morphism, includes lists like
+$$[x,\ x]\ \ \ \ \ \ \text{and}\ \ \ \ \ \ [x, y, x]\ \sim\ [x, x, y].$$ 
+...FIX...]
+
 #### Observation: Abelian groups are $\text{List}$-algebras.
 More specifically, the category $\mathbf{Ab}$ of Abelian groups admits the natural structure of a category of algebras for the monad $\text{List}$. More generally, for any ring $R$, the category $R\text{-\textbf{Mod}}$ of $R$-modules admits the natural structure of a category of $\text{List}$-algebras.
 
@@ -96,7 +100,7 @@ More specifically, the category $\mathbf{Ab}$ of Abelian groups admits the natur
 
 ### Deformations of monads
 
-### Ring-Weighted lists
+### Ring-weighted lists
 
 ## Implementation Roadmap
 
