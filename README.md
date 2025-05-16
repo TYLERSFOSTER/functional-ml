@@ -96,6 +96,8 @@ More specifically, the category $\mathbf{Ab}$ of Abelian groups admits the natur
 
 ### Deformations of monads
 
+### $\mathbb{R}$-Weighted lists
+
 ## Implementation Roadmap
 
 ### Prototype project: [...]
