@@ -102,6 +102,14 @@ More specifically, the category $\mathbf{Ab}$ of Abelian groups admits the natur
 
 ### Ring-weighted lists
 
+## Encoding monadic coherence in loss terms
+
+<div align="center">
+  <img src="./images/assoc.jpg" alt="ring_deformation" width="32%">
+</div>
+
+$$\text{op}\big(\ \text{op}_{1}(s_{11},\ \dots,\ s_{1n_{1}}),\ \ \dots\ ,\ \ \text{op}_{m}(s_{m1},\ \dots,\ s_{mn_{m}})\ \big)\ \ \longmapsto\ \ \widetilde{\text{op}}(s_{11},\ \dots,\ s_{1n_{1}},\ \dots\ ,\ s_{m1},\ \dots,\ s_{mn_{m}})$$
+
 ## Implementation Roadmap
 
 ### Prototype project: [...]
