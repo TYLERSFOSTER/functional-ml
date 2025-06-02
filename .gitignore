@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+.pdm-python/
+*.py[cod]
+*.egg-info/
+*.log
+
+# Virtual env (if present)
+.venv/
+.env/
+
+# Haskell
+dist-newstyle/
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+*.a
+*.dylib
+.cache/
+packagedb/
+sdist/
+tmp/
+
+# LaTeX build artifacts (if compiling TeX locally)
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.synctex.gz
