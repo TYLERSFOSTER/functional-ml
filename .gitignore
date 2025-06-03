@@ -2,10 +2,12 @@
 # Python (PDM, common)
 # ======================
 __pycache__/
+*.pyc
 *.py[cod]
 .pdm-python/
 *.egg-info/
 .python-version
+
 
 # ======================
 # Python: project-specific
@@ -38,7 +40,6 @@ docs/tex/*.toc
 docs/tex/*.bbl
 docs/tex/*.blg
 docs/tex/*.synctex.gz
-docs/tex/*.pdf
 
 # ======================
 # macOS

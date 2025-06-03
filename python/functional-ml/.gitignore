@@ -1,0 +1,30 @@
+# Bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments (if any)
+.env/
+.venv/
+
+# PDM and build artifacts
+pdm.lock
+__pypackages__/
+
+# PyInstaller
+*.spec
+build/
+dist/
+
+# Test cache
+.cache/
+.pytest_cache/
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.swp
+
+# Ignore exported requirements if not needed
+# requirements.txt
