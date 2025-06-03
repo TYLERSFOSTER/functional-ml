@@ -1,32 +1,46 @@
-# Python
+# ======================
+# Python (PDM, common)
+# ======================
 __pycache__/
 *.py[cod]
 .pdm-python/
+*.egg-info/
+.python-version
 
-# Haskell
-dist-newstyle/
-*.hi
-*.o
-*.a
-*.dyn_hi
-*.dyn_o
-*.dylib
-.cache/
-packagedb/
-sdist/
-tmp/
+# ======================
+# Python: project-specific
+# ======================
+python/functional-ml/.pdm-python
 
+# ======================
+# Haskell (Cabal or Stack)
+# ======================
+haskell/functional-ml/dist-newstyle/
+haskell/functional-ml/.stack-work/
+haskell/functional-ml/*.hi
+haskell/functional-ml/*.o
+haskell/functional-ml/*.a
+haskell/functional-ml/*.dyn_hi
+haskell/functional-ml/*.dyn_o
+haskell/functional-ml/*.dylib
+haskell/functional-ml/cache/
+haskell/functional-ml/packagedb/
+haskell/functional-ml/sdist/
+haskell/functional-ml/tmp/
+
+# ======================
+# LaTeX (build artifacts)
+# ======================
+docs/tex/*.aux
+docs/tex/*.log
+docs/tex/*.out
+docs/tex/*.toc
+docs/tex/*.bbl
+docs/tex/*.blg
+docs/tex/*.synctex.gz
+docs/tex/*.pdf
+
+# ======================
 # macOS
-.DS_Store
-
-# LaTeX (optional if you build .tex files)
-*.aux
-*.log
-*.out
-*.toc
-*.pdf
-*.synctex.gz
-dist-newstyle/
-__pycache__/
-.pdm-python/
+# ======================
 .DS_Store

@@ -1,0 +1,12 @@
+# Ignore all build artifacts except final .pdf and .tex
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm

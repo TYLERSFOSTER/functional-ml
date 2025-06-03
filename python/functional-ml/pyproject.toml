@@ -5,11 +5,12 @@ description = "Default template for PDM package"
 authors = [
     {name = "TYLERSFOSTER", email = "tylerisnotavailable@gmail.com"},
 ]
-dependencies = []
+dependencies = ["numpy>=2.2.6", "torch>=2.7.0", "matplotlib>=3.10.3"]
 requires-python = "==3.13.*"
 readme = "README.md"
 license = {text = "MIT"}
 
-
 [tool.pdm]
 distribution = false
+package-dir = "src"
+

@@ -1,0 +1,129 @@
+\documentclass[11pt, a4paper]{article}
+
+ \usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=2.5cm]{geometry}
+\usepackage{amsthm}
+
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+% Define the new "Problem" environment
+\newtheorem{problem}{Problem}[subsection]
+
+\begin{document}
+
+\begin{section}{A}
+[...]
+
+\begin{subsection}{Typed functional programming as a foundation for ML models}
+
+\begin{problem}
+\normalfont
+Systems like \href{https://github.com/openai/codex}{{\em OpenAI Codex}  \ExternalLink}~\cite{CodeX}, and \href{https://github.com/salesforce/CodeT5}{{\em CodeT5} \ExternalLink}~\cite{WWJH21, LWGSH22, WLGBLH23}, and \href{https://github.com/google-deepmind/code_contests}{{\em AlphaCode} \ExternalLink}~\cite{LCCK22} generate code as plain text. This leads to (i) syntactically valid but semantically broken code, (ii) type errors, and (iii) violations of safety constraints.
+\end{problem}
+
+
+\noindent
+{\bf Possible solution:} A typed lambda calculus foundation provides rich static guarantees, via {\em purity}, {\em types}, {\em resource constraints}, {\em better priors for code generation}, {\em type-directed completion}.
+
+\end{subsection}
+
+\begin{subsection}{Typed Code Models} Models trained on type annotations (e.g., Haskell, OCaml, Rust) can perform type-aware generation.
+\end{subsection}
+
+\begin{subsection}{Neural Program Synthesis with Types} e.g., DeepCoder and successors use type information as features to guide synthesis.
+\end{subsection}
+
+\begin{subsection}{Monads and Effect Systems in ML Safety}
+a. Monads as Models of Effects
+Monads are widely used in Haskell to isolate side effects (IO, randomness, state), and to model pipelines.
+
+ML models, especially in reinforcement learning and simulation, deal with effects (e.g., randomness, stateful environments). Using monadic abstractions could:
+
+make dataflow pipelines compositional and safe,
+
+allow reasoning about effects (e.g., logging, uncertainty),
+
+embed constraints in types (e.g., a function that only accesses a read-only dataset).
+
+This is one of the core ideas in:
+
+Probabilistic Programming Languages (PPLs) like Hakaru, Anglican, and Pyro, where the probabilistic model is itself a monadic computation.
+
+Effect systems in ML IRs, such as Google's Relay (part of TVM), which tracks purity/effects.
+\end{subsection}
+
+\begin{subsection}{Category Theory and Differentiable Programming}
+Category theory underpins both monads and many concepts in automatic differentiation and differentiable programming.
+
+Projects like:
+
+DiffSharp (F\#-based autodiff using category theory),
+
+JAX and Haskell's backprop, and
+
+Conal Elliott’s work on denotational AD using categories,
+
+explore categorical formulations of AD as functorial transformations, leading to better compositionality and correctness.
+\end{subsection}
+
+\begin{subsection}{Safe ML via Typed DSLs} Inspired by Haskell
+MLIR (Multi-Level IR) and TVM’s Relay explore typed, functional-style IRs for safe optimization and compilation.
+
+TensorFlow Eager and JAX both adopt a functional, pure style to enable more robust transformations (e.g., JIT, vectorization).
+
+Haskell-based DSLs like Grenade, TorchHask, and DeepLearningHaskell offer ways to build ML pipelines with compile-time guarantees.
+\end{subsection}
+
+\begin{subsection}{Practical ML Projects Using Haskell}
+Although niche, some serious Haskell ML libraries exist:
+
+Hasktorch: Haskell bindings to LibTorch with typed tensors and differentiable programming.
+
+Grenade: A fully Haskell-native DL framework with type-safe layer composition.
+
+Edward Kmett’s category-theoretic autodiff experiments.
+
+These show how GADT-based types, dependent typing, and monads can be used to enforce shape, operation safety, and effect constraints in ML pipelines.
+\end{subsection}
+
+\begin{subsection}
+Summary: Why This is Gaining Traction
+The motivation is this:
+
+Modern ML models are too brittle, opaque, and unrestricted. Haskell-like systems offer tools (types, purity, monads, category theory) to impose structure, improve interpretability, and enable safer code synthesis and reasoning.
+
+This isn’t just academic—industry is gradually adopting functional and type-theoretic ideas into production pipelines, even if not full Haskell.
+
+Would you like a deeper dive into any of these (e.g., how monads model probabilistic computations, or how types guide neural program synthesis)?
+
+\end{subsection}
+\end{section}
+
+
+\bibliographystyle{alpha}
+\bibliography{../bib/functional-ml}
+
+\end{document}
+
+
