@@ -2,7 +2,7 @@
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE UndecidableInstances #-}
 
-module Categories.FiniteSets (FiniteSet, FinMap(..), apply) where
+module Categories.FiniteSets (FiniteSet(..), FinMap(..), apply) where
 
 class FiniteSet a where
   universe :: [a]

@@ -1,6 +1,7 @@
 # Cabal and GHC build output
 dist/
 dist-newstyle/
+functional-ml/sandbox
 *.hi
 *.o
 *.dyn_hi
@@ -9,6 +10,8 @@ dist-newstyle/
 *.so
 *.dll
 *.dylib
+*.exe
+*.out
 
 # Stack (if you use it)
 .stack-work/
@@ -24,7 +27,11 @@ dist-newstyle/
 
 # Cabal sandbox (legacy)
 cabal.sandbox.config/
+cabal.project.local
+cabal.project.local~*
 cabal.sandbox.config
+setup-config
+.stack-work/
 
 # Misc
 *.prof
@@ -32,3 +39,9 @@ cabal.sandbox.config
 *.hp
 *.eventlog
 *.tix
+
+# editor/IDE cruft
+*.swp
+*~
+.vscode/
+.idea/
