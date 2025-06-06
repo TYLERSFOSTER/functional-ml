@@ -1,5 +1,2 @@
-# Functional-ML
+# Functional-ML : Haskell
 
-### Current focus: *Representing various configuration-based factorization algebras*
-
-##
