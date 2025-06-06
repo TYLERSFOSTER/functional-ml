@@ -1,8 +1,9 @@
--- File: test/TrialMonadTest.hs
-module Main where
+module Trials.TrialMonadTest (test_trialMonad) where
 
-import Test.HUnit
-import Trials.TrialMonad
+import Test.Tasty
+import Test.Tasty.HUnit
+
+import Trials.TrialMonad -- make sure this module is available and defines TrialMonad, append, etc.
 
 -- Add Show & Eq instances if not already defined
 instance Eq a => Eq (TrialMonad a) where
@@ -15,27 +16,26 @@ instance Show a => Show (TrialMonad a) where
   show (Cons x xs) = "Cons " ++ show x ++ " (" ++ show xs ++ ")"
 
 -- Example values
+ex1 :: TrialMonad Int
 ex1 = Cons 1 (Cons 2 (Cons 3 Nil))
 
 -- Tests
-testFunctorId = TestCase (assertEqual "fmap id" (fmap id ex1) ex1)
-testFunctorComp = TestCase (assertEqual "fmap composition"
-  (fmap ((+1) . (*2)) ex1)
-  ((fmap (+1) . fmap (*2)) ex1))
+test_trialMonad :: TestTree
+test_trialMonad = testGroup "TrialMonad tests"
+  [ 
+    -- hlint ignore "Functor law"
+    testCase "fmap id" $
+      fmap id ex1 @?= ex1
 
-testApplicativeId = TestCase (assertEqual "applicative identity"
-  (pure id <*> ex1)
-  ex1)
+  , -- hlint ignore "Functor law"
+    testCase "fmap composition" $
+      fmap ((+1) . (*2)) ex1 @?= (fmap (+1) . fmap (*2)) ex1
 
-testAppendNil = TestCase (assertEqual "append Nil" (append ex1 Nil) ex1)
+  , -- hlint ignore "Use <$>"
+    testCase "applicative identity" $
+      pure id <*> ex1 @?= ex1
 
--- Grouped tests
-tests = TestList
-  [ testFunctorId
-  , testFunctorComp
-  , testApplicativeId
-  , testAppendNil
+  , testCase "append Nil" $
+      append ex1 Nil @?= ex1
   ]
 
-main :: IO Counts
-main = runTestTT tests

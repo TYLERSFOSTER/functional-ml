@@ -1,0 +1,2 @@
+-- File: src/PseudoTensorCategories/NonRepresentable/PointConfigurations/ProximityConstrained.hs
+module PseudoTensorCategories.NonRepresentable.PointConfigurations.ProximityConstrained where
